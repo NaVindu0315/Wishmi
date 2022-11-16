@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wishmi.login">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightPink">
+            <Label
+                Text="WELCOME"
+                FontAttributes="Bold"
+                FontSize="Large"
+                BackgroundColor="CadetBlue"
+                TextColor="AliceBlue"
+                HorizontalOptions="CenterAndExpand"
+                >
+                
+            </Label>
+            <Label
+                Text="Username"
+                TextColor="Black"
+                >
+                
+            </Label>
+            <Entry 
+                Placeholder="Enter your username"
+                ReturnType="Next"
+                x:Name="username"
+                ClearButtonVisibility="WhileEditing"
+                Completed="username_Completed"
+                
+                >
+                
+                
+            </Entry>
+            <Label
+                 Text="Password"
+                TextColor="Black"
+                >
+                
+            </Label>
+            <Entry
+                IsPassword="True"
+                Placeholder="Enter your password"
+                x:Name="Password"
+                ClearButtonVisibility="WhileEditing"
+                Completed="Password_Completed">
+                
+                
+                
+            </Entry>
+            <Button
+                Text="Login"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                BackgroundColor="SeaGreen"
+                CornerRadius="50"
+                Clicked="Button_Clicked">
+                
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
